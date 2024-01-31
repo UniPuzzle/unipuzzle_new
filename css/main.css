@@ -271,6 +271,16 @@ img {
   margin: 22px 0 0px 0px;
   transform: rotate(-90deg);
 }
+.logo-puzzle-classics {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/svg/puzzleClassics-logo.svg);
+  height: 35px;
+  margin: 22px 0 0px 0px;
+  transform: rotate(-90deg);
+}
 .logo-coin {
   display: block;
   background-position: center;
