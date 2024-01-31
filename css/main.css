@@ -1,0 +1,357 @@
+:root {
+  --title-color: #0c3e96;
+  --bcg-stickers: #648dd4;
+  --main-text-color: #000;
+  --secondary-text-color: #272626;
+  --additional-text-color: #fff;
+  --hover-link-color: #2f5aae;
+  --hover-button-text-color: #fff;
+  --hover-button-bcg-color: #4f4f4f;
+  --hover-button-border-color: #4f4f4f6b;
+  --bgc-header: #f4f5f7;
+  --item-bgc: #f7f7f7;
+  --margin-bottom: 30px;
+  --transition: 300ms;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--main-text-color);
+  background-color: var(--bcg-color);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover,
+.link:focus {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  /* max-width: 1170px; */
+  padding: 0;
+  margin: 0 auto;
+}
+
+.margin_bottom {
+  margin-bottom: var(--margin-bottom);
+}
+
+.section {
+  margin-bottom: var(--margin-bottom);
+}
+
+.title {
+  font-family: 'Open-sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--margin-bottom);
+}
+
+@font-face {
+  font-family: 'Open-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/open-sans/opensans-regular-webfont.woff') format('woff'),
+    url('/fonts/open-sans/opensans-regular-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Open-sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/open-sans/opensans-bold-webfont.woff') format('woff'),
+    url('/fonts/open-sans/opensans-bold-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Tai_Heritage_Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Tai_Heritage_Pro/taiheritagepro-regular-webfont.woff')
+      format('woff'),
+    url('/fonts/Tai_Heritage_Pro/taiheritagepro-regular-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Tai_Heritage_Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Tai_Heritage_Pro/taiheritagepro-bold-webfont.woff')
+      format('woff'),
+    url('/fonts/Tai_Heritage_Pro/taiheritagepro-bold-webfont.woff2')
+      format('woff2');
+}
+.header {
+  background-color: var(--bcg-header);
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.header-menu__link {
+  margin-right: 1.3vw;
+  text-transform: uppercase;
+}
+
+.header-menu__link:last-child {
+  margin-right: 0;
+}
+
+.header-menu__link:hover,
+.header-menu__link:focus {
+  color: var(--hover-link-color);
+}
+
+/* =================== */
+.section {
+}
+.categories {
+}
+.categories__title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--title-color);
+  padding: 2.3rem;
+  margin: 0 auto;
+}
+.category-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  background-color: #f7f7f773;
+}
+.category__sticker {
+  width: max-content;
+  height: 16.25rem;
+  background-color: var(--bcg-stickers);
+  padding: 1.3rem 0.7rem 1.3rem 0.5rem;
+  border-radius: 0 1.3rem 1.3rem 0;
+}
+.sticker__content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title-subtitle {
+  font-weight: 400;
+  font-size: 1.875rem;
+  color: white;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  margin: auto 0;
+}
+.category__content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.category__card {
+  position: relative;
+  width: 210px;
+  height: 260px;
+  margin: 0 auto;
+  border: 0.5px solid #d7d7d7;
+  border-radius: 3px;
+}
+.category__description {
+  margin-left: 2rem;
+  max-width: 25%;
+  margin-top: auto;
+}
+/* ================ */
+.mtck-elem {
+  position: absolute;
+  width: 7px;
+  height: 25%;
+  background-image: url(../images/svg/matchstick.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.itr_coin_elem {
+  position: absolute;
+  display: flex;
+  width: 25%;
+  height: 20%;
+}
+.logo-matchsticks {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/svg/mtck-logo.svg);
+  height: 35px;
+  margin: 22px 0 0px 0px;
+  transform: rotate(-90deg);
+}
+.logo-coin {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/svg/coin-logo.svg);
+  height: 35px;
+  margin: 22px 0 0px 0px;
+  transform: rotate(-90deg);
+}
+.task-svg {
+  display: inline-block;
+  float: left;
+  padding-right: 15px;
+}
+.task-svg::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/svg/letter-S.svg);
+}
+.task-text p::first-letter {
+  margin-left: -8px;
+  opacity: 0;
+  color: transparent;
+}
+/* ===================== */
+.wrap-img {
+  width: 60%;
+  margin: 0 auto -33px;
+}
+.section-item__block {
+  position: relative;
+  width: 100%;
+
+  padding-left: 0.4rem;
+
+  z-index: 5;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--bcg-stickers);
+  transform: skewX(-10deg);
+}
+.item-title {
+  color: var(--additional-text-color);
+}
+.section-item__master {
+  width: 100%;
+  margin-top: -2px;
+  margin-left: -12px;
+  background-color: #ebf3ff;
+  border-radius: 0px 0px 15px 15px;
+  transform: skewX(-10deg);
+}
+.aside__title {
+  font-size: 1.125rem;
+  line-height: 1.05;
+  min-height: 0px;
+  font-weight: 800;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+.aside__title--position {
+  padding: 1rem 0.3rem 0.5rem 1.3rem;
+}
+.aside__text {
+  padding: 0.8rem 0.7rem 1rem 1.3rem;
+}
+
+.transformation {
+  transform: skewX(10deg);
+}
+.category__card.puzzle-classics {
+  width: 330px;
+  height: 315px;
+  border: none;
+}
