@@ -195,19 +195,29 @@ img {
   padding: 2.3rem;
   margin: 0 auto;
 }
+.categories__title-count {
+  display: inline-block;
+  width: 3rem;
+  border: 0.0625rem solid var(--title-color);
+}
 .category-wrapper {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   margin-bottom: 0.7rem;
+  padding: 0.5rem 0;
   background-color: #f7f7f773;
 }
 .category__sticker {
+  display: flex;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
-  height: 16.25rem;
+  height: 18rem;
   background-color: var(--bcg-stickers);
-  padding: 1.3rem 0.7rem 1.3rem 0.5rem;
+  padding: 1.3rem 1rem 1.3rem 0.8rem;
   border-radius: 0 1.3rem 1.3rem 0;
 }
 .sticker__content {
@@ -218,7 +228,7 @@ img {
 
 .title-subtitle {
   font-weight: 400;
-  font-size: 1.875rem;
+  font-size: 1.3rem;
   color: white;
   writing-mode: tb-rl;
   transform: rotate(180deg);
@@ -229,20 +239,17 @@ img {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 0;
 }
 
 .category__card {
   position: relative;
-  width: 210px;
-  height: 260px;
+  width: 273px;
+  height: 338px;
   margin: 0 auto;
-  border: 0.5px solid #d7d7d7;
-  border-radius: 3px;
 }
 .category__description {
   margin-left: 2rem;
-  max-width: 25%;
+  max-width: 224px;
   margin-top: auto;
 }
 /* ================ */
@@ -266,9 +273,9 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../images/svg/mtck-logo.svg);
+  background-image: url(../images/svg/MP_White_logo.svg);
   height: 35px;
-  margin: 22px 0 0px 0px;
+  margin: 14px 0 0px 0px;
   transform: rotate(-90deg);
 }
 .logo-puzzle-classics {
@@ -276,9 +283,9 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../images/svg/puzzleClassics-logo.svg);
+  background-image: url(../images/svg/puzzle-cards-white.svg);
   height: 35px;
-  margin: 22px 0 0px 0px;
+  margin: 24px 0 0px 0px;
   transform: rotate(-90deg);
 }
 .logo-coin {
@@ -286,9 +293,9 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../images/svg/coin-logo.svg);
+  background-image: url(../images/svg/coin-white.svg);
   height: 35px;
-  margin: 22px 0 0px 0px;
+  margin: 24px 0 0px 0px;
   transform: rotate(-90deg);
 }
 .task-svg {
@@ -312,56 +319,131 @@ img {
   opacity: 0;
   color: transparent;
 }
-/* ===================== */
-.wrap-img {
-  width: 60%;
-  margin: 0 auto -33px;
-}
-.section-item__block {
-  position: relative;
-  width: 100%;
-
-  padding-left: 0.4rem;
-
-  z-index: 5;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  background-color: var(--bcg-stickers);
-  transform: skewX(-10deg);
-}
-.item-title {
-  color: var(--additional-text-color);
-}
-.section-item__master {
-  width: 100%;
-  margin-top: -2px;
-  margin-left: -12px;
-  background-color: #ebf3ff;
-  border-radius: 0px 0px 15px 15px;
-  transform: skewX(-10deg);
-}
-.aside__title {
-  font-size: 1.125rem;
-  line-height: 1.05;
-  min-height: 0px;
-  font-weight: 800;
-  color: var(--title-color);
-  text-transform: uppercase;
-}
-.aside__title--position {
-  padding: 1rem 0.3rem 0.5rem 1.3rem;
-}
-.aside__text {
-  padding: 0.8rem 0.7rem 1rem 1.3rem;
-}
-
-.transformation {
-  transform: skewX(10deg);
-}
+/* ========puzzle cards============= */
 .category__card.puzzle-classics {
-  width: 330px;
-  height: 315px;
+  width: 275px;
+  height: 490px;
+}
+
+.card__item-wrap {
+  display: flex;
+  border-radius: 20px;
+  background-color: var(--white-bgc);
+  overflow: hidden;
+  box-shadow: 2px 2px 5px #b5b2b3;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card__item-text {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+  align-content: center;
+  padding: 15px;
+  color: var(--main-text-color);
+}
+.card-img-wrapper {
+  position: relative;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.card__item-img {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+.card-text {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  width: 100%;
+  height: 64px;
+  padding: 0 15px;
+
+  margin-top: 15px;
+}
+.card__button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input-btn {
+  display: none;
+}
+.card__button {
+  position: relative;
+  display: flex;
+  width: 130px;
+  height: 27px;
+  margin: 0 0 10px 0;
   border: none;
+  background: #9dd53a;
+  background: -moz-linear-gradient(
+    top,
+    #9dd53a 0%,
+    #a1d54f 50%,
+    #80c217 51%,
+    #7cbc0a 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #9dd53a 0%,
+    #a1d54f 50%,
+    #80c217 51%,
+    #7cbc0a 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    #9dd53a 0%,
+    #a1d54f 50%,
+    #80c217 51%,
+    #7cbc0a 100%
+  );
+}
+
+.card__button-left {
+  border-radius: 0px 30px 30px 0px;
+}
+.card__button-right {
+  border-radius: 30px 0px 0px 30px;
+}
+.card__button-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: center;
+  padding: 0px 12px;
+  color: var(--secondary-text-color);
+  font-size: 83%;
+  font-weight: 500;
+  pointer-events: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
