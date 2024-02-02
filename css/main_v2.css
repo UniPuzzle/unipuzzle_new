@@ -262,18 +262,40 @@ img {
   margin: 0 auto;
 }
 .category__card-mtck {
-  /* border: 1px solid #80808061;
-  border-radius: 1.25rem; */
-  width: 24.7406rem;
-  height: 30.625rem;
-  /* box-shadow: 5px 4px 5px #b5b2b3; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #80808061;
+  border-radius: 1.25rem;
+  /* width: 24.7406rem;
+  height: 30.625rem; */
+  width: 275px;
+  height: 490px;
+
+  box-shadow: 5px 4px 5px #b5b2b3;
+}
+.mtck__markup {
+  position: relative;
+  width: 210px;
+  height: 260px;
 }
 .category__card-coin {
-  /* background-color: #19385d;
-  border-radius: 1.25rem; */
-  width: 24.5406rem;
-  height: 30.625rem;
-  /* box-shadow: 5px 4px 5px #b5b2b3; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19385d;
+  border-radius: 1.25rem;
+  /* width: 24.5406rem;
+  height: 30.625rem; */
+  width: 275px;
+  height: 490px;
+
+  box-shadow: 5px 4px 5px #b5b2b3;
+}
+.coin__markup {
+  position: relative;
+  width: 260px;
+  height: 325px;
 }
 .category__description {
   margin-left: 2rem;
