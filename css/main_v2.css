@@ -222,9 +222,7 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 3.4375rem;
   height: 30.625rem;
 
   background-color: var(--bcg-stickers);
@@ -310,6 +308,7 @@ img {
   margin-right: 2rem;
   opacity: 0;
   pointer-events: none;
+  margin-left: 0;
 }
 /* ================ */
 .mtck-elem {

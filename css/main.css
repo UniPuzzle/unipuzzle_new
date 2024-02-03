@@ -222,9 +222,7 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 3.4375rem;
   height: 30.625rem;
 
   background-color: var(--bcg-stickers);
@@ -253,13 +251,19 @@ img {
   justify-content: center;
   align-items: center;
   margin-right: 3.4375rem;
+  overflow: hidden;
 }
 
 .category__card {
   position: relative;
-  width: 273px;
-  height: 338px;
+
   margin: 0 auto;
+}
+
+.card__wrapper-puz-class {
+  position: relative;
+  width: 24.5406rem;
+  height: 30.625rem;
 }
 .category__card-mtck {
   /* border: 1px solid #80808061;
@@ -275,6 +279,32 @@ img {
   height: 30.625rem;
   /* box-shadow: 5px 4px 5px #b5b2b3; */
 }
+.category__card-puz-clas {
+  width: 275px;
+  height: 490px;
+}
+.category__card-puz-clas .card__item-wrap {
+  background-color: #efeded;
+}
+.card__item-wrap-main {
+  position: relative;
+  z-index: 3;
+}
+
+.category__card-puz-clas.before {
+  position: absolute;
+  top: 15px;
+  left: -93px;
+  transform: rotate(-20deg);
+  z-index: 0;
+}
+.category__card-puz-clas.after {
+  position: absolute;
+  top: 15px;
+  right: -93px;
+  transform: rotate(20deg);
+  z-index: 0;
+}
 .category__description {
   margin-left: 2rem;
   max-width: 224px;
@@ -288,6 +318,7 @@ img {
   margin-right: 2rem;
   opacity: 0;
   pointer-events: none;
+  margin-left: 0;
 }
 /* ================ */
 .mtck-elem {
