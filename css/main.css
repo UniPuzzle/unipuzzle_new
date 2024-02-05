@@ -12,6 +12,7 @@
   --item-bgc: #f7f7f7;
   --margin-bottom: 30px;
   --transition: 300ms;
+  --bgc-header-menu: #3a6fc9;
 }
 
 *,
@@ -153,6 +154,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -161,6 +163,14 @@ img {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  color: var(--additional-text-color);
+}
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 1rem;
 }
 
 .logo__title {
@@ -169,18 +179,111 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.header-menu {
+  width: 100%;
+  height: 4.6875rem;
+
+  padding: 0 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgc-header-menu);
+}
+
+.block__letters {
+  position: absolute;
+  height: 100%;
+  padding: 0.3125rem;
+  top: 50%;
+  /* left: 50%; */
+  transform: translate(50%, -50%);
+}
+.block__bcg-letters {
+  position: relative;
+  height: 100%;
+  min-width: fit-content;
+}
+.img-letters {
+  height: 100%;
+}
+.bcg-letters {
+  height: 100%;
+}
+
 .header-menu__link {
+  max-width: 135px;
   margin-right: 1.3vw;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.header-menu__link::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 55px;
+  min-width: 2.375rem;
+  /* width: -webkit-fill-available; */
+  height: 45px;
+  margin-right: 11px;
+  transition: var(--transition);
+}
+.mtck::before {
+  background-image: url(../images/svg/header/MP_logo_1.svg);
+}
+.logic::before {
+  background-image: url(../images/svg/header/logichero.svg);
+}
+.coin::before {
+  background-image: url(../images/svg/header/coinhero.svg);
+}
+.chess::before {
+  background-image: url(../images/svg/header/chesshero.svg);
+}
+.classics::before {
+  background-image: url(../images/svg/header/classicshero.svg);
+}
+.holiday::before {
+  background-image: url(../images/svg/header/holidayhero.svg);
+}
+.mtck:hover::before {
+  background-image: url(../images/svg/header/mtckrgb.svg);
+}
+.logic:hover::before {
+  background-image: url(../images/svg/header/logicrgb.svg);
+}
+.coin:hover::before {
+  background-image: url(../images/svg/header/coinrgb.svg);
+}
+.chess:hover::before {
+  background-image: url(../images/svg/header/chessrgb.svg);
+}
+.classics:hover::before {
+  background-image: url(../images/svg/header/classicsrgb.svg);
+}
+.holiday:hover::before {
+  background-image: url(../images/svg/header/holidayrgb.svg);
 }
 
 .header-menu__link:last-child {
   margin-right: 0;
 }
+.header-menu__item {
+  font-size: 0.9rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+}
 
-.header-menu__link:hover,
-.header-menu__link:focus {
-  color: var(--hover-link-color);
+.link__border {
+  display: flex;
+  height: 45%;
+  width: 1px;
+  background-color: var(--additional-text-color);
+  transform: rotate(8deg);
 }
 
 /* =================== */
@@ -280,10 +383,15 @@ img {
   /* box-shadow: 5px 4px 5px #b5b2b3; */
 }
 .category__card-puz-clas {
-  width: 275px;
+  width: 277px;
   height: 490px;
+  color: var(--bcg-stickers);
 }
 .category__card-puz-clas .card__item-wrap {
+  background-color: var(--additional-text-color);
+}
+.category__card-puz-clas.before .card__item-wrap,
+.category__card-puz-clas.after .card__item-wrap {
   background-color: #efeded;
 }
 .card__item-wrap-main {
@@ -297,6 +405,7 @@ img {
   left: -93px;
   transform: rotate(-20deg);
   z-index: 0;
+  filter: grayscale(1);
 }
 .category__card-puz-clas.after {
   position: absolute;
@@ -304,6 +413,7 @@ img {
   right: -93px;
   transform: rotate(20deg);
   z-index: 0;
+  filter: grayscale(1);
 }
 .category__description {
   margin-left: 2rem;
@@ -524,4 +634,15 @@ img {
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+/* ==============footer=========== */
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 5rem;
+  height: 250px;
+  background-color: #19385d;
 }
