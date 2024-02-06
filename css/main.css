@@ -135,6 +135,26 @@ img {
   src: url('/fonts/open-sans/opensans-extrabold-webfont.woff') format('woff'),
     url('/fonts/open-sans/opensans-extrabold-webfont.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'Florida-vibes';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
+      format('woff'),
+    url('/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Florida-vibes';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
+      format('woff'),
+    url('/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
+      format('woff2');
+}
 
 .header {
   background-color: var(--bcg-header);
@@ -181,9 +201,10 @@ img {
 }
 
 .block__letters {
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 700;
+  font-family: 'florida-vibes';
+  font-size: 3.5rem;
+  /* font-style: italic; */
+  /* font-weight: 700; */
   color: var(--additional-text-color);
   position: absolute;
   height: 100%;
@@ -197,9 +218,10 @@ img {
   align-items: flex-end;
 }
 .letter__text {
-  margin-left: -21px;
-  padding-bottom: 11px;
-  transform: skewX(-12deg) scaleY(1.8);
+  margin-left: -32px;
+  margin-bottom: -10px;
+  /* padding-bottom: 11px; */
+  /* transform: skewX(-12deg) scaleY(1.8); */
   /* transform: scaleY(1.9); */
   letter-spacing: 1.1px;
 }

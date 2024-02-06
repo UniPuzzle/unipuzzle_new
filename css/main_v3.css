@@ -136,6 +136,8 @@ img {
     url('/fonts/open-sans/opensans-extrabold-webfont.woff2') format('woff2');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .header {
   background-color: var(--bcg-header);
 }
@@ -181,23 +183,23 @@ img {
 }
 
 .block__letters {
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  /* font-style: italic; */
+  font-weight: 400;
   color: var(--additional-text-color);
   position: absolute;
   height: 100%;
-
   top: 0;
   left: 0;
-
   float: left;
   /* padding-right: 15px; */
   display: flex;
   align-items: flex-end;
 }
 .letter__text {
-  margin-left: -21px;
+  font-family: 'Lobster', sans-serif;
+  margin-left: -28px;
   padding-bottom: 5px;
 }
 .letter__text::first-letter {
