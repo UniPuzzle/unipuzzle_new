@@ -150,9 +150,9 @@ img {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
+  src: url('/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
       format('woff'),
-    url('../fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
+    url('/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
       format('woff2');
 }
 
