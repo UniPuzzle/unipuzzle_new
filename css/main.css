@@ -148,11 +148,11 @@ img {
 @font-face {
   font-family: 'Florida-vibes';
   font-style: normal;
-  font-weight: 700;
+
   font-display: swap;
-  src: url('/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
+  src: url('../fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
       format('woff'),
-    url('/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
+    url('../fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
       format('woff2');
 }
 
@@ -218,6 +218,8 @@ img {
   align-items: flex-end;
 }
 .letter__text {
+  font-family: 'Florida-vibes';
+
   margin-left: -32px;
   margin-bottom: -10px;
   /* padding-bottom: 11px; */
