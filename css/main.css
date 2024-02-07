@@ -328,6 +328,7 @@ img {
 .categories__title {
   font-size: 2rem;
   text-align: center;
+  font-weight: 800;
   color: var(--title-color);
   text-transform: uppercase;
   display: flex;
@@ -740,7 +741,8 @@ img {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  min-height: 43px;
+  font-weight: 800;
+  min-height: 50px;
 
   -webkit-line-clamp: 2; /* Число отображаемых строк */
   display: -webkit-box; /* Включаем флексбоксы */
