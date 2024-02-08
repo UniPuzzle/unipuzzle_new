@@ -698,7 +698,7 @@ img {
 }
 /* ==============mazes================ */
 .mazes {
-  padding: 6.5rem 2rem;
+  padding: 0.5rem 2rem;
   flex-wrap: wrap;
 }
 /* ===wrapper-drop start=== */
@@ -706,17 +706,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8rem 2rem 4rem;
 }
 
 .dropdown__title {
   font-weight: 800;
-  font-size: 32px;
+  font-size: 42px;
   color: var(--title-color);
   line-height: 1.14;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   margin: 0;
+  margin-right: 10px;
 }
 .dropdown__title::before {
   content: '';
@@ -728,21 +730,19 @@ img {
   background-size: contain;
 }
 .logo__title::before {
-  width: 60px;
-  height: 60px;
-  margin-left: 5px;
-  margin-right: 13px;
+  width: 70px;
+  height: 70px;
+  margin-right: 35px;
+  margin-left: 60px;
   background-size: contain;
 }
-.mazes .logo__title::before {
+.mazes__logo::before {
   background-image: url(../images/svg/maze_icon_green.svg);
 }
-@media screen and (min-width: 780px) {
-  .mtck__logo-mtckrgb::before {
-    width: 56px;
-    height: 48px;
-  }
+.logic__logo::before {
+  background-image: url(../images/svg/logicrgb.svg);
 }
+
 .dropdown {
   position: relative;
   z-index: 9999;
@@ -764,7 +764,7 @@ img {
   outline: none;
   cursor: pointer;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 17.6px;
   line-height: 1.29;
 }
 @media screen and (min-width: 480px) {
@@ -776,7 +776,15 @@ img {
 @media screen and (min-width: 960px) {
   .dropdown__button {
     width: 530px;
-    height: 32px;
+    height: 42px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .dropdown__button {
+    width: 38.6875rem;
+    height: 42px;
     padding-top: 7px;
     padding-bottom: 7px;
   }
@@ -836,8 +844,14 @@ img {
   .dropdown__list {
     position: absolute;
     width: 530px;
+
     left: 0;
-    top: 32px;
+    top: 43px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .dropdown__list {
+    width: 38.6875rem;
   }
 }
 .dropdown__list--visible {
@@ -845,9 +859,9 @@ img {
 }
 .dropdown__list-item {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.1rem;
   line-height: 1.29;
-  background-color: var(--white-bgc);
+  background-color: var(--additional-text-color);
   color: var(--item-block-bgc);
   margin: 0;
   padding: 0;
@@ -871,14 +885,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 .mazes__item {
   width: 32.5%;
 }
 .mazes__img {
   height: 278px;
+  width: 100%;
   width: -webkit-fill-available;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 0.9375rem 0.9375rem 0 0;
 }
@@ -929,20 +945,20 @@ img {
 
 .logic {
   padding: 0;
-  margin: 6.5rem 0;
+  margin: 0;
   position: relative;
 }
-.logic .wrapper-drop {
+.logic .form-group {
   position: absolute;
   top: 50%;
   z-index: 99999999;
-  left: 50%;
+  left: 70%;
   margin-top: 85px;
   transform: translate(-50%, -50%);
   max-width: 80%;
 }
 .logic .dropdown__button {
-  background-color: #efededfa;
+  background-color: var(--additional-text-color);
 }
 .logic__list {
   width: 100%;
@@ -966,10 +982,14 @@ img {
   overflow: visible;
   border-left: none;
 }
-/* .logic__item:nth-child(2) {
-  border-left: 3px solid white;
-}
 .logic__item:last-child {
+  overflow: visible;
+  border-left: none;
+}
+.logic__item:nth-child(3) {
+  border-right: 3px solid white;
+}
+/* .logic__item:last-child {
   border: none;
 } */
 .logic__link {
@@ -981,14 +1001,17 @@ img {
   transform: skewX(10deg);
 }
 .logic__img {
-  transform: scale(1.3);
-  height: 30%;
+  transform: scale(1.4);
+  /* height: 30%; */
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 @media screen and (min-width: 1100px) {
   .logic__img {
-    height: 40%;
+    /* height: 40%; */
+    height: 100%;
   }
 }
 .logic__title {
