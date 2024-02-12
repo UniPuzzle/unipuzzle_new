@@ -1,7 +1,7 @@
 :root {
   --bgc-header: #fff;
   /* ============ */
-  --bgc-header-menu-mob: #efededfa;
+  --bgc-header-menu-mob: #ebf3ff;
   --bgc-header-menu-tablet: transparent;
   --bgc-header-menu-desktop: #3a6fc9;
   /* ============ */
@@ -14,6 +14,58 @@
   /* ============ */
   --transition: 300ms;
 }
+/* ============================ */
+@font-face {
+  font-family: 'Open-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-regular-webfont.woff')
+      format('woff'),
+    url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-regular-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Open-sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-bold-webfont.woff')
+      format('woff'),
+    url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-bold-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Open-sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-extrabold-webfont.woff')
+      format('woff'),
+    url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-extrabold-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Florida-vibes';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://.unipuzzle.com/up_css/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
+      format('woff'),
+    url('https://.unipuzzle.com/up_css/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Florida-vibes';
+  font-style: normal;
+
+  font-display: swap;
+  src: url('https://.unipuzzle.com/up_css/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
+      format('woff'),
+    url('https://.unipuzzle.com/up_css/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
+      format('woff2');
+}
+/* ================================= */
 
 .header {
   background-color: var(--bcg-header);
@@ -57,41 +109,44 @@
 .header-menu {
   font-weight: 800;
   width: 100%;
-  max-width: 515px;
-  height: -webkit-fill-available;
+  height: max-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--bgc-header-menu-mob);
   flex-wrap: wrap;
   color: var(--item-color-mob);
-  padding: 20px;
+  padding: 2rem 10vw;
   justify-content: center;
   gap: 15px;
 }
-@media screen and (min-width: 515px) {
+@media screen and (min-width: 606px) {
   .header-menu {
-    background-color: var(--bgc-header-menu-tablet);
+    padding: 2rem 17vw;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 735px) {
   .header-menu {
-    font-weight: 400;
-    width: 50%;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--bgc-header-menu-desktop);
-    flex-wrap: wrap;
-    color: var(--item-color-desktop);
-    padding-top: 0;
+    padding: 2rem 19vw;
+  }
+}
+@media screen and (min-width: 780px) {
+  .header-menu {
+    padding: 2rem 26vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header-menu {
+    padding: 2rem 28vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .header-menu {
+    font-weight: 400;
+    color: var(--item-color-desktop);
     width: 100%;
+    height: 3rem;
     max-width: 100%;
     padding: 0 16px 0 0;
     display: flex;
@@ -102,6 +157,12 @@
   }
 }
 @media screen and (min-width: 1140px) {
+  .header-menu {
+    height: 3.6875rem;
+    gap: 0.3125rem;
+  }
+}
+@media screen and (min-width: 1280px) {
   .header-menu {
     height: 4.6875rem;
   }
@@ -121,6 +182,11 @@
 }
 @media screen and (min-width: 1140px) {
   .block__letters {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .block__letters {
     font-size: 3.5rem;
   }
 }
@@ -131,6 +197,12 @@
   letter-spacing: 1.1px;
 }
 @media screen and (min-width: 1140px) {
+  .letter__text {
+    margin-left: -23px;
+    margin-bottom: -6px;
+  }
+}
+@media screen and (min-width: 1280px) {
   .letter__text {
     margin-left: -32px;
     margin-bottom: -10px;
@@ -172,12 +244,23 @@
 @media screen and (min-width: 1024px) {
   .header-menu__link {
     max-width: 135px;
-    margin-right: 1.3vw;
+    margin-right: 0.4vw;
+
     text-transform: uppercase;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     text-align: start;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .header-menu__link {
+    margin-right: 0.6vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-menu__link {
+    margin-right: 1.3vw;
   }
 }
 
@@ -199,13 +282,14 @@
   .header-menu__link::before {
     margin-right: 5px;
     margin-bottom: 0;
+    width: 28px;
+    height: 28px;
   }
 }
 @media screen and (min-width: 1140px) {
   .header-menu__link::before {
-    max-width: 135px;
-    width: 38px;
-    height: 38px;
+    width: 33px;
+    height: 33px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -233,6 +317,9 @@
 .holiday::before {
   background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/holidayhero.svg);
 }
+.real-mazes::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/maze_icon_blue.svg);
+}
 .mtck:hover::before {
   background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-mtck/mtck-logo.svg);
 }
@@ -248,6 +335,9 @@
 .classics:hover::before {
   background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/classicsrgb.svg);
 }
+.real-mazes:hover::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/maze_icon_green.svg);
+}
 .holiday:hover::before {
   background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/holcolor.svg);
 }
@@ -260,24 +350,19 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0.3rem;
+  padding: 0.3rem 0.2rem;
   background-color: var(--bgc-item-mob);
   max-width: 110px;
   min-height: 110px;
   border-radius: 12px;
 }
 
-@media screen and (min-width: 515px) {
-  .header-menu__item {
-    background-color: var(--bgc-item-tablet);
-  }
-}
 @media screen and (min-width: 1024px) {
   .header-menu__item {
     background-color: var(--bgc-item-desktop);
     max-width: 100%;
     min-height: auto;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: left;
   }
 }
