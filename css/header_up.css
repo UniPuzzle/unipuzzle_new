@@ -116,9 +116,14 @@
   background-color: var(--bgc-header-menu-mob);
   flex-wrap: wrap;
   color: var(--item-color-mob);
-  padding: 2rem 10vw;
+  padding: 2rem 2vw;
   justify-content: center;
   gap: 15px;
+}
+@media screen and (min-width: 480px) {
+  .header-menu {
+    padding: 2rem 10vw;
+  }
 }
 @media screen and (min-width: 606px) {
   .header-menu {
@@ -346,15 +351,28 @@
   margin-right: 0;
 }
 .header-menu__item {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0.3rem 0.2rem;
+  padding: 0.3rem 0.4rem;
   background-color: var(--bgc-item-mob);
-  max-width: 110px;
-  min-height: 110px;
+  max-width: 95px;
+  min-height: 95px;
   border-radius: 12px;
+}
+@media screen and (min-width: 440px) {
+  .header-menu__item {
+    max-width: 105px;
+    min-height: 105px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header-menu__item {
+    font-size: 0.9rem;
+    max-width: 110px;
+    min-height: 110px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
