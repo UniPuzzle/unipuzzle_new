@@ -1,0 +1,449 @@
+:root {
+  --bgc-header: #fff;
+  /* ============ */
+  --bgc-header-menu-mob: #ebf3ff;
+  --bgc-header-menu-tablet: transparent;
+  --bgc-header-menu-desktop: #3a6fc9;
+  /* ============ */
+  --bgc-item-mob: #fff;
+  --bgc-item-tablet: #efededfa;
+  --bgc-item-desktop: transparent;
+  /* ============ */
+  --item-color-mob: #0c3e96;
+  --item-color-desktop: #fff;
+  /* ============ */
+  --transition: 300ms;
+}
+/* ============================ */
+@font-face {
+  font-family: 'Open-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-regular-webfont.woff')
+      format('woff'),
+    url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-regular-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Open-sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-bold-webfont.woff')
+      format('woff'),
+    url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-bold-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Open-sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-extrabold-webfont.woff')
+      format('woff'),
+    url('https://www.unipuzzle.com/up_css/fonts/open-sans/opensans-extrabold-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Florida-vibes';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://.unipuzzle.com/up_css/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
+      format('woff'),
+    url('https://.unipuzzle.com/up_css/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
+      format('woff2');
+}
+@font-face {
+  font-family: 'Florida-vibes';
+  font-style: normal;
+
+  font-display: swap;
+  src: url('https://.unipuzzle.com/up_css/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff')
+      format('woff'),
+    url('https://.unipuzzle.com/up_css/fonts/florida-vibes/florida_vibes_by_turbologo-webfont.woff2')
+      format('woff2');
+}
+/* ================================= */
+
+.header {
+  background-color: var(--bcg-header);
+}
+
+.header-content {
+  color: var(--bgc-item-mob);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-content {
+    justify-content: space-between;
+  }
+}
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 1rem;
+}
+
+.logo__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.header__logo {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 360px) {
+  .header__logo {
+    max-width: 213px;
+  }
+}
+
+.header-menu {
+  font-weight: 800;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgc-header-menu-mob);
+  flex-wrap: wrap;
+  color: var(--item-color-mob);
+  padding: 2rem 2vw;
+  justify-content: center;
+  gap: 15px;
+}
+@media screen and (max-width: 1023.98px) {
+  .header-menu {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    align-content: center;
+    background-color: var(--bgc-header-menu-mob);
+    display: none;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .close__btn {
+    content: '';
+    background-image: url(../images/svg/header/close.svg);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 86%;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .burger__btn {
+    background-image: url(../images/svg/header/burger-menu.svg);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 23px;
+    left: 89%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header-menu {
+    padding: 2rem 10vw;
+  }
+}
+@media screen and (min-width: 606px) {
+  .header-menu {
+    padding: 2rem 17vw;
+  }
+}
+@media screen and (min-width: 735px) {
+  .header-menu {
+    padding: 2rem 19vw;
+  }
+}
+@media screen and (min-width: 780px) {
+  .header-menu {
+    padding: 2rem 26vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header-menu {
+    padding: 2rem 28vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-menu {
+    font-weight: 400;
+    color: var(--item-color-desktop);
+    width: 100%;
+    height: 3rem;
+    max-width: 100%;
+    padding: 0 16px 0 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    background-color: var(--bgc-header-menu-desktop);
+  }
+}
+@media screen and (min-width: 1140px) {
+  .header-menu {
+    height: 3.6875rem;
+    gap: 0.3125rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-menu {
+    height: 4.6875rem;
+  }
+}
+
+.block__letters {
+  font-family: 'Florida-vibes';
+  font-size: 2.2rem;
+  color: var(--item-color-desktop);
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  float: left;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (min-width: 1140px) {
+  .block__letters {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .block__letters {
+    font-size: 3.5rem;
+  }
+}
+.letter__text {
+  font-family: 'Florida-vibes';
+  margin-left: -21px;
+  margin-bottom: -7px;
+  letter-spacing: 1.1px;
+}
+@media screen and (min-width: 1140px) {
+  .letter__text {
+    margin-left: -23px;
+    margin-bottom: -6px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .letter__text {
+    margin-left: -32px;
+    margin-bottom: -10px;
+  }
+}
+
+.letter__text::first-letter {
+  opacity: 0;
+  color: transparent;
+}
+@media screen and (max-width: 1023.98px) {
+  .block__bcg-letters {
+    display: none;
+  }
+}
+
+.block__bcg-letters {
+  position: relative;
+  height: 100%;
+  min-width: fit-content;
+}
+.img-letters {
+  height: 100%;
+}
+.bcg-letters {
+  height: 100%;
+}
+
+.header-menu__link {
+  max-width: 135px;
+  margin-right: 0;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .header-menu__link {
+    max-width: 135px;
+    margin-right: 0.4vw;
+
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .header-menu__link {
+    margin-right: 0.4vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-menu__link {
+    margin-right: 1.3vw;
+  }
+}
+
+.header-menu__link::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  margin-right: 0;
+  margin-bottom: 11px;
+  width: 33px;
+  height: 33px;
+  min-width: 2.375rem;
+  transition: var(--transition);
+}
+
+@media screen and (min-width: 1024px) {
+  .header-menu__link::before {
+    margin-right: 5px;
+    margin-bottom: 0;
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .header-menu__link::before {
+    width: 33px;
+    height: 33px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-menu__link::before {
+    margin-right: 7px;
+    width: 45px;
+    height: 45px;
+  }
+}
+.mtck::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-mtck/MP_logo_1.svg);
+}
+.logic::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/logichero.svg);
+}
+.coin::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/coinhero.svg);
+}
+.chess::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/chesshero.svg);
+}
+.classics::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/classicshero.svg);
+}
+.holiday::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/holidayhero.svg);
+}
+.real-mazes::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/maze_icon_blue.svg);
+}
+.mtck:hover::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-mtck/mtck-logo.svg);
+}
+.logic:hover::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/logicrgb.svg);
+}
+.coin:hover::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/coinrgb.svg);
+}
+.chess:hover::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/chessrgb.svg);
+}
+.classics:hover::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/classicsrgb.svg);
+}
+.real-mazes:hover::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/maze_icon_green.svg);
+}
+.holiday:hover::before {
+  background-image: url(https://www.unipuzzle.com/up_images/new_images/sec-hero/svg/holcolor.svg);
+}
+
+.header-menu__link:last-child {
+  margin-right: 0;
+}
+.header-menu__item {
+  font-size: 0.7rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.4rem;
+  background-color: var(--bgc-item-mob);
+  max-width: 95px;
+  max-height: 95px;
+  border-radius: 12px;
+}
+@media screen and (min-width: 440px) {
+  .header-menu__item {
+    max-width: 105px;
+    max-height: 105px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header-menu__item {
+    font-size: 0.9rem;
+    max-width: 110px;
+    max-height: 110px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-menu__item {
+    background-color: var(--bgc-item-desktop);
+    max-width: 100%;
+    min-height: auto;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .header-menu__item {
+    font-size: 0.8rem;
+  }
+}
+
+.link__border {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .link__border {
+    display: flex;
+    height: 45%;
+    width: 1px;
+    background-color: var(--item-color-desktop);
+    transform: rotate(8deg);
+    margin-left: 7px;
+  }
+}
