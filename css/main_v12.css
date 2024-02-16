@@ -835,6 +835,7 @@ img {
 
 .category-wrapper.mazes {
   margin-bottom: 8rem;
+  height: auto;
 }
 .mazes {
   padding: 9rem 0rem 2rem 0rem;
@@ -1270,6 +1271,7 @@ img {
   padding: 9rem 0rem 2rem 0rem;
   margin-top: -9rem;
   background-color: #ebf3ff;
+  height: auto;
   /* background-color: var(--bcg-category); */
 }
 @media screen and (min-width: 768px) {
