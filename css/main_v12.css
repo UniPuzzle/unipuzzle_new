@@ -855,6 +855,11 @@ img {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1024px) {
+  .category-wrapper.mazes {
+    margin-bottom: 1.7rem;
+  }
+}
 
 /* ===wrapper-drop start=== */
 .wrapper-drop {
