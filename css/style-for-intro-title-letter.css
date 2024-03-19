@@ -1,0 +1,101 @@
+.intro__title-letter {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+}
+.intro__title-letter::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.intro__title-letter.a::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/A.svg);
+}
+.intro__title-letter.b::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/B.svg);
+}
+.intro__title-letter.c::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/C.svg);
+}
+.intro__title-letter.d::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/D.svg);
+}
+.intro__title-letter.e::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/E.svg);
+}
+.intro__title-letter.f::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/F.svg);
+}
+.intro__title-letter.g::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/G.svg);
+}
+.intro__title-letter.h::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/H.svg);
+}
+.intro__title-letter.i::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/I.svg);
+}
+.intro__title-letter.j::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/J.svg);
+}
+.intro__title-letter.k::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/K.svg);
+}
+.intro__title-letter.l::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/L.svg);
+}
+.intro__title-letter.m::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/M.svg);
+}
+.intro__title-letter.n::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/N.svg);
+}
+.intro__title-letter.o::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/O.svg);
+}
+.intro__title-letter.p::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/P.svg);
+}
+.intro__title-letter.q::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/Q.svg);
+}
+.intro__title-letter.r::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/R.svg);
+}
+.intro__title-letter.s::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/S.svg);
+}
+.intro__title-letter.t::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/T.svg);
+}
+.intro__title-letter.u::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/U.svg);
+}
+.intro__title-letter.v::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/V.svg);
+}
+.intro__title-letter.w::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/W.svg);
+}
+.intro__title-letter.x::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/X.svg);
+}
+.intro__title-letter.y::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/Y.svg);
+}
+.intro__title-letter.z::before {
+  background-image: url(https://www.unipuzzle.com/up_images/сapital-letters/Z.svg);
+}
+
+.index_content_cpage_intro:first-child p::first-letter {
+  /* margin-left: -0.5rem; */
+  opacity: 0;
+  color: transparent;
+
+  font-size: 0.1rem;
+}
